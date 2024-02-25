@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello!</h1>
+        <p>Welcome to our website.This your free source of daily dopamine
+        </p>
+        <div class="buttons">
+            <a  class="btn" id="1">Daily Jokes</a>
+            <a  class="btn" id="2">Quotes</a>
+            <a  class="btn" id="3">Recommendations</a>
+        </div>
+    </div>
+    <script>
+        let jp=document.getElementById('1')
+        jp.addEventListener('click',function() {
+            window.location.href='http://127.0.0.1:5500/jokes.html';
+        let qp=document.getElementById('2')
+        qp.addEventListener('click',function() {
+            window.location.href='http://127.0.0.1:5500/quotes.html';
+        })
+        })
+
+    </script>
+    
+</body>
+</html>
+
